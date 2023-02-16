@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html>
-<title> My Personal Website</title>
+<title>My story</title>
 <head>
+<style>
+.sec {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+</style>
+<script>
+function changeScr(){
+document.getElementById("myImageId").src="image/hani.jpg";
+}
+</script>
 </head>
 <body>
-<div> </div>
-<div> </div>
-</body>
+<div>
+<img id="myImageId" src="image/dog.jpg" alt="this is cadillac">
+</div>
+<div>
+<center><button onclick="changeScr()">Change Image Button</button></center>
+</div>
+<h1>The sotry of my life </h1>
+<div class="sec">
+<section>
+  <h2>General information</h2>
+  <p>Name:Hana Terefe
+Age:23
+hair color: black 
+eye color: brown
+ </p>
+</section>
+</div>
+<div class="sec">
+<section>
+  <h2>My Story </h2>
+  <p>
 
+In 1992 my mom gave a birth to a cutie whom they named hana after my grandmother, the mother of my father. That was me. I was the last child of my parents. My father was the youngest of 7 children and was the first brother out of 4 to have a child. I was a gift of happiness for my parents and grandparents. My mom has told me that my father’s whole family, parents and siblings were all interested to help out my mom to raise me. But my mom did it on her own with my father. My father was very busy with his job (director of many farms), and he wasn’t able to help my mom with me as much as he would have liked to.
+
+</p>
+</section>
+</div>
+
+<table>
+  <tr>
+    <th>Course Number</th>
+    <th>Course Title</th>
+    <th>semester taken</th>
+  </tr>
+  <tr>
+    <td>C001</td>
+    <td>Intruction to Computer</td>
+    <td>I</td>
+  </tr>
+  <tr>
+    <td>C002</td>
+    <td>Data Maining</td>
+    <td>II</td>
+  </tr>
+  <tr>
+    <td>C003</td>
+    <td>Reaserch</td>
+    <td>I</td>
+  </tr>
+  <tr>
+    <td>C004</td>
+    <td>Statistics</td>
+    <td>II</td>
+  </tr>
+  <tr>
+    <td>C005</td>
+    <td>Mathimatics</td>
+    <td>II</td>
+  </tr>
+  <tr>
+    <td>C006</td>
+    <td>Calcules </td>
+    <td>I</td>
+  </tr>
+</table>
+
+</body>
 </html>
