@@ -35,6 +35,14 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+.sec {
+      position: relative;
+      text-align: center;
+      margin-top: 5%;
+      margin-left: 25%;
+      width: 50%;
+      height: auto;
+    }
 
 body {margin: 0;}
 
@@ -54,6 +62,7 @@ ul.navigation li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  
 }
 
 ul.navigation li a:hover:not(.active) {background-color: #111;}
@@ -66,15 +75,18 @@ ul.navigation li.right {float: right;}
   ul.navigation li.right, 
   ul.navigation li {float: none;}
 }
-footer{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #333;
-  height: auto;
-  width: 100vw;
-}
+footer {
+      position: absolute;
+      text-align: center;
+      color: bisque;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #333;
+      color: aliceblue;
+      height: 100px;
+      width: auto;
+    }
 </style>
 </head>
 <body>
@@ -84,9 +96,9 @@ footer{
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact and feedBack</a></li>
         </div>
-<h3>Contact Form</h3>
+<h3 >Contact Form</h3>
 
-<div class="container">
+<div class="sec" class="container">
   <form action="/action_page.php">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
