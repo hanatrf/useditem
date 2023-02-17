@@ -1,141 +1,180 @@
 <!DOCTYPE html>
 <html>
 <title>My story</title>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-.sec {
-  border: 5px outset red;
-  background-color: lightblue;
-  text-align: center;
-}
+  <style>
+    .sec {
+      float: left;
+      background-color: gray;
+      width: 50%;
+      height: 280px;
+    }
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
 
-body {margin: 0;}
+    body {
+      margin: 0;
+    }
 
-ul.navigation {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+    ul.navigation {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
 
-ul.navigation li {float: left;}
+    ul.navigation li {
+      float: left;
+    }
 
-ul.navigation li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+    ul.navigation li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
-ul.navigation li a:hover:not(.active) {background-color: #111;}
+    ul.navigation li a:hover:not(.active) {
+      background-color: #111;
+    }
 
-ul.navigation li a.active {background-color: #04AA6D;}
+    ul.navigation li a.active {
+      background-color: #04AA6D;
+    }
 
-ul.navigation li.right {float: right;}
+    ul.navigation li.right {
+      float: right;
+    }
 
-@media screen and (max-width: 600px) {
-  ul.navigation li.right, 
-  ul.navigation li {float: none;}
-}
+    @media screen and (max-width: 600px) {
 
-</style>
-<script>
-function changeScr(){
-document.getElementById("myImageId").src="image/hani.jpg";
-}
-</script>
+      ul.navigation li.right,
+      ul.navigation li {
+        float: none;
+      }
+    }
+
+    footer {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #333;
+      color: aliceblue;
+      height: 100px;
+      width: auto;
+    }
+  </style>
+  <script>
+    function changeScr() {
+      document.getElementById("myImageId").src = "image/hani.jpg";
+    }
+  </script>
 </head>
+
 <body>
-<div>
-<ul class="navigation">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="contact.html">Contact and feedBack</a></li>
-</div>
   <div>
-<img id="myImageId" src="image/dog.jpg" alt="this is cadi">
-</div>
-<div>
-<button onclick="changeScr()">Change Image Button</button>
-</div>
-<h1>The sotry of my life </h1>
-<div class="sec">
-<section>
-  <h2>General information</h2>
-  <p>Name:Hana Terefe
-Age:23
-hair color: black 
-eye color: brown
- </p>
-</section>
-</div>
-<div class="sec">
-<section>
-  <h2>My Story </h2>
-  <p>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact and feedBack</a></li>
+  </div>
+  <div>
+    <img id="myImageId" src="image/dog.jpg" alt="this is cadi">
+  </div>
+  <div>
+    <button onclick="changeScr()">Change Image Button</button>
+  </div>
+  <h1>The sotry of my life </h1>
+  <div class="sec">
+    <section>
+      <h2>General information</h2>
+      <p>Name:Hana Terefe
+        Age:23
+        hair color: black
+        eye color: brown
+      </p>
+    </section>
+  </div>
+  <div class="sec">
+    <section>
+      <h2>My Story </h2>
+      <p>
 
-In 1992 my mom gave a birth to a cutie whom they named hana after my grandmother, the mother of my father. That was me. I was the last child of my parents. My father was the youngest of 7 children and was the first brother out of 4 to have a child. I was a gift of happiness for my parents and grandparents. My mom has told me that my father’s whole family, parents and siblings were all interested to help out my mom to raise me. But my mom did it on her own with my father. My father was very busy with his job (director of many farms), and he wasn’t able to help my mom with me as much as he would have liked to.
+        In 1992 my mom gave a birth to a cutie whom they named hana after my grandmother, the mother of my father. That
+        was me. I was the last child of my parents. My father was the youngest of 7 children and was the first brother
+        out of 4 to have a child. I was a gift of happiness for my parents and grandparents. My mom has told me that my
+        father’s whole family, parents and siblings were all interested to help out my mom to raise me. But my mom did
+        it on her own with my father. My father was very busy with his job (director of many farms), and he wasn’t able
+        to help my mom with me as much as he would have liked to.
 
-</p>
-</section>
-</div>
-
-<table>
-  <tr>
-    <th>Course Number</th>
-    <th>Course Title</th>
-    <th>semester taken</th>
-  </tr>
-  <tr>
-    <td>C001</td>
-    <td>Intruction to Computer</td>
-    <td>I</td>
-  </tr>
-  <tr>
-    <td>C002</td>
-    <td>Data Maining</td>
-    <td>II</td>
-  </tr>
-  <tr>
-    <td>C003</td>
-    <td>Reaserch</td>
-    <td>I</td>
-  </tr>
-  <tr>
-    <td>C004</td>
-    <td>Statistics</td>
-    <td>II</td>
-  </tr>
-  <tr>
-    <td>C005</td>
-    <td>Mathimatics</td>
-    <td>II</td>
-  </tr>
-  <tr>
-    <td>C006</td>
-    <td>Calcules </td>
-    <td>I</td>
-  </tr>
-</table>
-
+      </p>
+    </section>
+  </div>
+  <div>
+    <table>
+      <tr>
+        <th>Course Number</th>
+        <th>Course Title</th>
+        <th>semester taken</th>
+      </tr>
+      <tr>
+        <td>C001</td>
+        <td>Intruction to Computer</td>
+        <td>I</td>
+      </tr>
+      <tr>
+        <td>C002</td>
+        <td>Data Maining</td>
+        <td>II</td>
+      </tr>
+      <tr>
+        <td>C003</td>
+        <td>Reaserch</td>
+        <td>I</td>
+      </tr>
+      <tr>
+        <td>C004</td>
+        <td>Statistics</td>
+        <td>II</td>
+      </tr>
+      <tr>
+        <td>C005</td>
+        <td>Mathimatics</td>
+        <td>II</td>
+      </tr>
+      <tr>
+        <td>C006</td>
+        <td>Calcules </td>
+        <td>I</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <footer>
+      <div>
+        <p>copyright &copy;<a href="http://hana.infinityfreeapp.com/">Hana's Website</a></p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
