@@ -2,6 +2,7 @@
 <html>
 <title>My story</title>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 .sec {
   border: 5px outset red;
@@ -25,7 +26,9 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-ul {
+body {margin: 0;}
+
+ul.navigation {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -33,11 +36,9 @@ ul {
   background-color: #333;
 }
 
-li {
-  float: left;
-}
+ul.navigation li {float: left;}
 
-li a {
+ul.navigation li a {
   display: block;
   color: white;
   text-align: center;
@@ -45,9 +46,17 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
-  background-color: #111;
+ul.navigation li a:hover:not(.active) {background-color: #111;}
+
+ul.navigation li a.active {background-color: #04AA6D;}
+
+ul.navigation li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.navigation li.right, 
+  ul.navigation li {float: none;}
 }
+
 </style>
 <script>
 function changeScr(){
@@ -57,7 +66,7 @@ document.getElementById("myImageId").src="image/hani.jpg";
 </head>
 <body>
 <div>
-<ul>
+<ul class="navigation">
   <li><a href="../../index.html">Home</a></li>
   <li><a href="../../about.html">About</a></li>
   <li><a href="../../contact.html">Contact and feedBack</a></li>
